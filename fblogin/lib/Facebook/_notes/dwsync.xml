@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="FacebookAuthorizationException.php" server="ftp.kljgistel.be" local="130764370670442272" remote="130739200200000000" Dst="2" />
+<file name="FacebookCanvasLoginHelper.php" server="ftp.kljgistel.be" local="130764370670512276" remote="130739200200000000" Dst="2" />
+<file name="FacebookClientException.php" server="ftp.kljgistel.be" local="130764370671552335" remote="130739200200000000" Dst="2" />
+<file name="FacebookJavaScriptLoginHelper.php" server="ftp.kljgistel.be" local="130764370675022534" remote="130739200200000000" Dst="2" />
+<file name="FacebookOtherException.php" server="ftp.kljgistel.be" local="130764370675132540" remote="130739200200000000" Dst="2" />
+<file name="FacebookPageTabHelper.php" server="ftp.kljgistel.be" local="130764370676082594" remote="130739200200000000" Dst="2" />
+<file name="FacebookPermissionException.php" server="ftp.kljgistel.be" local="130764370680432843" remote="130739200200000000" Dst="2" />
+<file name="FacebookPermissions.php" server="ftp.kljgistel.be" local="130764370680962874" remote="130739200200000000" Dst="2" />
+<file name="FacebookRedirectLoginHelper.php" server="ftp.kljgistel.be" local="130764370680992875" remote="130739200200000000" Dst="2" />
+<file name="FacebookRequest.php" server="ftp.kljgistel.be" local="130764370689233347" remote="130739200200000000" Dst="2" />
+<file name="FacebookRequestException.php" server="ftp.kljgistel.be" local="130764370689773378" remote="130739200200000000" Dst="2" />
+<file name="FacebookResponse.php" server="ftp.kljgistel.be" local="130764370689803379" remote="130739200200000000" Dst="2" />
+<file name="FacebookSDKException.php" server="ftp.kljgistel.be" local="130764370694623655" remote="130739200200000000" Dst="2" />
+<file name="FacebookServerException.php" server="ftp.kljgistel.be" local="130764370695143685" remote="130739200200000000" Dst="2" />
+<file name="FacebookSession.php" server="ftp.kljgistel.be" local="130764370695163686" remote="130739200200000000" Dst="2" />
+<file name="FacebookSignedRequestFromInputHelper.php" server="ftp.kljgistel.be" local="130764370699533936" remote="130739200200000000" Dst="2" />
+<file name="FacebookThrottleException.php" server="ftp.kljgistel.be" local="130764370699583939" remote="130739200200000000" Dst="2" />
+<file name="GraphAlbum.php" server="ftp.kljgistel.be" local="130764370700734004" remote="130739200800000000" Dst="2" />
+<file name="GraphObject.php" server="ftp.kljgistel.be" local="130764370704754234" remote="130739200800000000" Dst="2" />
+<file name="GraphLocation.php" server="ftp.kljgistel.be" local="130764370705954303" remote="130739200800000000" Dst="2" />
+<file name="GraphPage.php" server="ftp.kljgistel.be" local="130764370707034365" remote="130739200800000000" Dst="2" />
+<file name="GraphSessionInfo.php" server="ftp.kljgistel.be" local="130764370709334496" remote="130739200800000000" Dst="2" />
+<file name="GraphUser.php" server="ftp.kljgistel.be" local="130764370710504563" remote="130739200800000000" Dst="2" />
+<file name="GraphUserPage.php" server="ftp.kljgistel.be" local="130764370713594740" remote="130739200800000000" Dst="2" />
+</dwsync>

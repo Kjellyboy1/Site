@@ -1,0 +1,128 @@
+html,body,div,ol,ul,li,h1,h2,h3,h4,h5,h6,p,form,fieldset {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 14px;
+  color: #000000; 
+  font-family: Verdana; 
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #000000;
+}
+
+.printbanner {
+  font-size: 18px;
+  font-family: Comic Sans MS;
+  font-style: bold;
+}
+
+.maintable { 
+  vertical-align: top;
+}
+
+.images {
+  border: solid 1px #000000;
+}
+
+.title {
+  background: #E6E6E6;
+  border-bottom: 1px solid #000000;
+  border-top: 2px solid #000000;
+  font-style: italic;
+  height: 36px;
+  font-size: 14px;
+  padding: 0 10px 0 5px;
+}
+.ondertitle {
+  background: #E6E6E6;
+  color: #000000;
+  border-bottom: 1px solid #000000;
+  border-top: 2px solid #000000;
+  font-weight: bold;
+}
+.error {
+  background: #E4E3D9;
+  border: 1px solid #474000;
+}
+
+/* LEDENLIJST */
+.ledenboven {
+  border-bottom: 2px solid #A6A6A6;
+}
+.ledenonder {
+  border-bottom: 1px solid #A6A6A6;
+}
+.ledenborderboven {
+  border-top: 2px solid #000000;
+  border-bottom: 1px solid #000000;
+  background: #F2F2F2;
+}
+.ledenborderonder {
+  border-bottom: 2px solid #000000;
+  background: #F2F2F2;
+}
+.ledenbovendim {
+  border-bottom: 2px solid #A6A6A6;
+  color: #737373;
+}
+.ledenonderdim {
+  border-bottom: 1px solid #A6A6A6;
+  color: #737373;
+}
+.ledenonderdim a {
+  color: #737373;
+  text-decoration: none;
+}
+.ledenonderdim a:hover {
+  text-decoration: none;
+  color: #737373;
+}
+
+/* MEMO */
+.vandaag {
+  background-color: #F2F2F2;
+  font-weight: bold;
+}
+.weekend {
+  background-color: #F2F2F2;
+}
+.memo_onder {
+  border-bottom: 1px solid #D9D9D9;
+}
+.memo_onderdik {
+  border-bottom: 2px solid #D9D9D9;
+}
+.memo_onderlinksdik {
+  border-bottom: 1px solid #D9D9D9;
+  border-left: 2px solid #D9D9D9;
+}
+.memo_onderdiklinksdik {
+  border-bottom: 2px solid #D9D9D9;
+  border-left: 2px solid #D9D9D9;
+}
+.memo_onderlinks {
+  border-bottom: 1px solid #D9D9D9;
+  border-left: 1px solid #D9D9D9;
+}
+.memo_onderdiklinks {
+  border-bottom: 2px solid #D9D9D9;
+  border-left: 1px solid #D9D9D9;
+}
+
+/* OPMERKINGEN */
+.lineOpm {
+  border: solid 1px #000000;
+}
+.opm {
+  font-size: 10px;
+}
+

@@ -1,0 +1,617 @@
+html,body,div,ol,ul,li,h1,h2,h3,h4,h5,h6,p,form,fieldset 
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+.wit {
+	color: #fff
+}
+.footer {
+position: fixed; 
+width: 100%; 
+background: #500000; 
+bottom: 0px; 
+padding: 5px; 
+left: 0px; 
+font-family: 'Open Sans', sans-serif; 
+color: #fff; 
+} 
+body { 
+  color: #500000; 
+  background-color: #fff; 
+  font-family: Verdana; 
+  font-size: 12px; 
+}
+
+a {
+  color: #500000;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+  color: #500000;
+}
+
+.lineI { 
+  background: #fff;
+  width: 3px;
+}
+.lineU {
+  background: #fff;
+  width: 10px;
+}
+
+.marquee {
+  color: #6E7A52;
+  background: #DCE0D1;
+  border-bottom: solid 1px #fff;
+  height: 30px;
+}
+.marquee a {
+  color: #6E7A52;
+  text-decoration: none;
+}
+.marquee a:hover {
+  text-decoration: none;
+  color: #6E7A52;
+}
+.lineS { 
+  background: #fff;
+  height: 3px;
+}
+
+
+.images {
+  background: #FFFFFF;
+  border: solid 1px #474000;
+}
+.images_visible {
+  background: #FFCC67;
+  border: solid 1px #918c66;
+}
+
+.imagesSelect {
+  background: #FFCC67;
+  border: solid 3px #474000;
+}
+
+
+#navigation ul, #sub_navigation span {
+  margin-left: 0px;
+}
+#navigation li {
+  list-style: none;
+  display: inline;
+}
+#navigation a {
+  font-size: 11px;
+  float: left;
+  font-style: none;
+  text-decoration: none;
+  text-align: center;
+  width: 83px;
+  padding: 15px 0px 0px 0px;
+  color: #500000;
+}
+#navigation .selected a, #navigation a:hover {
+  font-size: 11px;
+  font-style: italic;
+  text-decoration: none;
+  color: #500000;
+}
+#navigation span {
+  float: left;
+  width: 9px;
+  height: 33px;
+}
+#nav_admin a {
+  color: #500000;
+}
+
+#sub_navigation {
+  background: #fff;
+  height: 30px;
+
+  border-bottom: 1px solid #fff;
+  overflow: auto;
+}
+#sub_navigation ul {
+  float: left;
+	list-style: none;
+}
+#sub_navigation li {
+  float: left;
+  list-style: none;
+}
+#sub_navigation a {
+  float: left;
+  font-size: 10px;
+  line-height: 10px;
+  text-decoration: none;
+  padding: 13px 25px 7px 24px;
+  color: #500000;
+}
+#sub_navigation a:hover, #sub_navigation .selected a {
+  color: #500000;
+}
+#sub_navigation span {
+  float: left;
+  width: 1px;
+  height: 30px;
+}
+#sub_navigation.flat {
+  height: 5px;
+  font-size: 1px;
+  line-height: 5px;
+  background: #500000;
+}
+
+.maintable { 
+  background: #fff;
+  padding: 15px 0px 5px 0px; 
+  vertical-align: top;
+  color: #500000;
+  width: 774px;
+}
+
+.title {
+  background: #fff;
+  color: #500000;
+  border-bottom: 1px solid #500000;
+  border-top: 2px solid #500000;
+  vertical-align: center;
+  font-style: italic;
+  font-size: 14px;
+  padding: 8px 10px 8px 5px;
+}
+
+.fieldset { 
+  padding: 0px 0px 0px 5px; 
+  vertical-align: top;
+}
+.legend {
+  color: #500000;
+}
+.ondertitle {
+  background: #50000;
+  color: #FFFFFF;
+  border-bottom: 1px solid #500000;
+  border-top: 2px solid #500000;
+  font-weight: bold;
+}
+.ondertitle_inschrijven {
+  background: #500000;
+  color: #FFFFFF;
+  border-bottom: 1px solid #BB8547;
+  border-top: 2px solid #BB8547;
+  font-weight: italic;
+}
+.ondertitle_inschrijven a{
+  color: #FFFFFF;
+  font-weight: italic;
+}
+
+.important {
+  color: #DA283E;
+}
+.important a {
+  color: #DA283E;
+}
+.error {
+  background: #E4E3D9;
+  border: 1px solid #474000;
+}
+.nok{
+  color: #CC0000;
+  background: #FFB3B3;
+  border: 1px solid #CC0000;
+}
+.ok {
+  color: #006600;
+  background: #B3FFB3;
+  border: 1px solid #006600;
+}
+
+/* HOME */
+/*onderaan de foto waar je op klikte */
+.input_home_onder { 
+  height: 200px;
+  width: 140px;
+  border: 2px solid #500000;
+  color: #500000;
+  background: #fff;
+  text-align: center;
+  font-family: Verdana;
+  font-size: 12px;
+}
+.input_home { 
+/*ONDERAAN ALS JE OP FOTO KLIKT! */
+  height: 320px;
+  width: 590px;
+  border: 1px solid #500000;
+  color: #500000;
+  background: #FFF;
+  font-family: Verdana;
+  font-size: 12px;
+}
+.input_home_onder_disabled { 
+  height: 200px;
+  width: 140px;
+  border: 2px solid #500000;
+  color: #500000;
+  background: #fff;
+  text-align: center;
+  font-family: Verdana;
+  font-size: 12px;
+}
+.input_home_disabled { 
+  height: 320px;
+  width: 590px;
+  border: 1px solid #500000;
+  color: #500000;
+  background: #fff;
+  font-family: Verdana;
+  font-size: 12px;
+}
+
+/* ACTIVI */
+.uitnodiging {
+  background: #E4E3D9;
+  border: 1px solid #474000;
+}
+
+/* MEMO */
+.vandaag {
+  background-color: #E8B36D;
+  font-weight: bold;
+}
+.weekend {
+  background-color: #F3D6B0;
+}
+.memo_onder {
+  border-bottom: 1px solid #BB8547;
+}
+.memo_onderdik {
+  border-bottom: 2px solid #BB8547;
+}
+.memo_onderlinksdik {
+  border-bottom: 1px solid #BB8547;
+  border-left: 2px solid #BB8547;
+}
+.memo_onderdiklinksdik {
+  border-bottom: 2px solid #BB8547;
+  border-left: 2px solid #BB8547;
+}
+.memo_onderlinks {
+  border-bottom: 1px solid #BB8547;
+  border-left: 1px solid #BB8547;
+}
+.memo_onderdiklinks {
+  border-bottom: 2px solid #BB8547;
+  border-left: 1px solid #BB8547;
+}
+.memo_visible {
+  color: #A6A282;
+  text-decoration: none;
+}
+.memo_visible a {
+  color: #A6A282;
+  text-decoration: none;
+}
+.memo_klj {
+  color: #7A6E00;
+  text-decoration: none;
+}
+.memo_klj a {
+  color: #7A6E00;
+  text-decoration: none;
+}
+.memo_vergadering {
+  color: #009900;
+  text-decoration: none;
+}
+.memo_vergadering a {
+  color: #009900;
+  text-decoration: none;
+}
+.memo_kljgistel {
+  color: #FF0000;
+  text-decoration: none;
+}
+.memo_kljgistel a {
+  color: #FF0000;
+  text-decoration: none;
+}
+
+/* OPMERKINGEN */
+.lineOpm {
+  border: solid 1px #474;
+}
+.opm {
+  font-size: 10px;
+}
+
+/* INPUT GASTENBOEK */
+.naam {
+  color: #474000;
+  border: 1px solid #474000;
+  background: #FAFEFF;
+  width: 200px;
+}
+
+.text { 
+  height: 200px;
+  width: 420px;
+  border: 1px solid #474000;
+  color: #474000;
+  background: #FAFEFF;
+}
+
+.titleGB {
+  background: #E2A65D;
+  color: #FFFFFF;
+  border-bottom: 1px solid #BB8547;
+  border-top: 2px solid #BB8547;
+  font-size: 10px;
+}
+.titleGB a{
+  color: #FFFFFF;
+}
+
+/* INPUT FUIVEN + INLOGGEN */
+.input {
+  color: #500000;
+  border: 1px solid #500000;
+  background: #fff;
+}
+.input_disabled {
+  color: #fff;
+  border: 1px solid #500000;
+  background: #fff;
+}
+
+.verzenden {
+    width: 140px; 
+    height: auto; 
+    padding: 10px; 
+    text-align: center; 
+    font-size: 16px; 
+    margin-top: 10px; 
+    background-color: #500000; 
+    border:0px; -moz-border-radius: 5px; 
+    -webkit-border-radius: 5px; 
+    -khtml-border-radius: 5px; 
+    color: white; 
+    text-shadow: 1px 1px 1px #400000; 
+    box-shadow: 0px 3px 0px #400000; 
+} 
+.verzenden_title { 
+  font-size: 8pt;
+  font-family: verdana; 
+  color: #500000; 
+  background: #fff; 
+  border: 1px solid #500000;
+}
+
+.extra { 
+  height: 200px;
+  width: 420px;
+  border: 1px solid #500000;
+  color: #500000;
+  background: #fff;
+}
+
+.lineup { 
+  height: 500px;
+  width: 420px;
+  border: 1px solid #500000;
+  color: #500000;
+  background: #fff;
+}
+
+/* LEDENLIJST */
+
+.ledenboven {
+  border-bottom: 2px solid #fff;
+}
+.ledenonder {
+  border-bottom: 1px solid #fff;
+}
+.ledenborderboven {
+  border-top: 2px solid #500000;
+  border-bottom: 2px solid #500000;
+  background: #fff;
+}
+.ledenborderonder {
+  border-bottom: 3px solid #500000;
+  background: #fff;
+}
+.ledenbovendim {
+  border-bottom: 2px solid #500000;
+  color: #500000;
+}
+.ledenonderdim {
+  border-bottom: 1px solid #500000;
+  color: #500000;
+}
+.ledenonderdim a {
+  color: #500000;
+  text-decoration: none;
+}
+.ledenonderdim a:hover {
+  text-decoration: none;
+  color: #500000;
+}
+
+
+
+/* AFBEELDINGEN FOTO'S & COMMENTAAR */
+.visible {
+  background: #E8B36D;
+  border: 1px solid #BB8547;
+}
+#kljgistel, #gewest, #camera, #film, #bestanden, #inschrijven, #commentaar{
+  background: #FFCC67; 
+  border: 1px solid #BB8547;
+  height: 20px;
+  font-weight: normal;
+  font-size: 12px;
+}
+#kljgistel a {
+  background: #FFCC67 url(../_images/duim.jpg) center center no-repeat;
+  float: left;
+  
+  text-decoration: none;
+  padding: 3px 8px 3px 8px;
+}
+#gewest a {
+  background: #FFCC67 url(../_images/gewest.jpg) center center no-repeat;
+  float: left;
+  
+  text-decoration: none;
+  padding: 3px 8px 3px 8px;
+}
+#camera a {
+  background: #FFCC67 url(../_images/camera.jpg) center center no-repeat;
+  float: left;
+  
+  text-decoration: none;
+  padding: 3px 8px 3px 8px;
+}
+#film a {
+  background: #FFCC67 url(../_images/film.jpg) center center no-repeat;
+  float: left;
+  
+  text-decoration: none;
+  padding: 3px 8px 3px 8px;
+}
+#bestanden a {
+  background: #FFCC67 url(../_images/bestanden.jpg) center center no-repeat;
+  float: left;
+  
+  text-decoration: none;
+  padding: 3px 8px 3px 8px;
+}
+#inschrijven a {
+  background: #FFCC67 url(../_images/inschrijven.jpg) center center no-repeat;
+  float: left;
+  
+  text-decoration: none;
+  padding: 3px 8px 3px 8px;
+}
+#commentaar a:hover {
+  background: #FFCC67 url(../_images/commentaar.jpg) center center no-repeat;
+  color: #FFFFFF;
+}
+#commentaar a {
+  background: #FFCC67 url(../_images/commentaar_fade.jpg) center center no-repeat;
+  float: left;
+  
+  text-decoration: none;
+  padding: 3px 8px 3px 8px;
+}
+.edit {
+  background: #723232; 
+  border: 1px solid #500000;
+}
+.text_camera { 
+  height: 100px;
+  width: 350px;
+  border: 1px solid #474000;
+  color: #474000;
+  background: #FAFEFF;
+}
+
+/* VERKENNER */
+#Main
+        {
+        width:710px;
+        margin:auto;
+        padding:auto;
+        height:auto;
+        }
+ 
+#Map_structuur {
+  width:300px;
+  height:400px;
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
+  border: 1px solid #EEEEEE;
+  overflow:scroll;
+  float:left;
+  background-color:#FFFFFF;
+}
+
+#Titel_structuur {
+  background-color:#DDDDDD;
+  border-bottom:1px solid #BBBBBB;
+  padding: 5px 0px 5px 5px;
+  margin: 0px 0px 10px 0px;
+  width:280px;
+}
+#Folder_structuur {
+  padding: 0px 0px 0px 5px;
+  margin: 0px 0px 0px 0px;
+}
+                
+#Map_structuur a{
+  color: #474000;
+  text-decoration:none;
+}
+                    
+                
+#Map_structuur a:hover{
+  color: #474000;
+  text-decoration:none;
+}
+                    
+#Map_self{
+  width:400px;
+  height:400px;
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
+  border: 1px solid #EEEEEE;
+  overflow:scroll;
+  float:left;
+  background-color:#FFFFFF;
+}
+                
+#Map_self a{
+  color: #474000;
+  text-decoration:none;
+}
+                    
+#Map_self a:hover{
+  color: #474000;
+  text-decoration:none;
+}
+
+.Titel_self {
+  background-color:#DDDDDD;
+  padding: 5px 0px 5px 0px;
+  border-bottom:1px solid #BBBBBB;
+  border-right:1px solid #BBBBBB;
+  width: 200;
+}
+
+/* ADMIN */
+.editdel {
+  background: #FFFFFF; 
+  border: 1px solid #500000;
+  font-weight: normal;
+}
+.editdel_c {
+  background: #FFFFFF; 
+  border: 1px solid #500000;
+  font-weight: normal;
+}
+.visible {
+  background: #FFFFFF; 
+  border: 1px solid #500000;
+  font-weight: normal;
+}
+
+/* VENDELEN */
+.dotted {
+  border-bottom : 1px dashed #BB8547;
+  border-top : none;
+  color : #fff;
+} 

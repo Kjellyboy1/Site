@@ -1,0 +1,65 @@
+html,body,div,ol,ul,li,h1,h2,h3,h4,h5,h6,p,for
+body { 
+  color: #500000; 
+ 
+  font-family: Verdana; 
+  font-size: 12px; 
+}
+
+a {
+  color: #500000;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+  color: #500000;
+}
+
+
+
+.title {
+  background: #500000;
+  color: #FFFFFF;
+  border-bottom: 1px solid #500000;
+  border-top: 2px solid #500000;
+  vertical-align: center;
+  font-style: italic;
+  font-size: 14px;
+  padding: 8px 10px 8px 5px;
+}
+
+
+
+/* LEDENLIJST */
+.ledenboven {
+  border-bottom: 2px solid #fff;
+}
+.ledenonder {
+  border-bottom: 1px solid #fff;
+}
+.ledenborderboven {
+  border-top: 2px solid #500000;
+  border-bottom: 2px solid #500000;
+  background: #fff;
+}
+.ledenborderonder {
+  border-bottom: 3px solid #500000;
+  background: #fff;
+}
+.ledenbovendim {
+  border-bottom: 2px solid #500000;
+  color: #500000;
+}
+.ledenonderdim {
+  border-bottom: 1px solid #500000;
+  color: #500000;
+}
+.ledenonderdim a {
+  color: #500000;
+  text-decoration: none;
+}
+.ledenonderdim a:hover {
+  text-decoration: none;
+  color: #500000;
+}
+

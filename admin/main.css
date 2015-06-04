@@ -1,0 +1,329 @@
+html,body,div,ol,ul,li,h1,h2,h3,h4,h5,h6,p,form,fieldset {
+ 
+body { 
+  color: #fff; 
+  background-color: #fff; 
+  font-family: Verdana; 
+  font-size: 12px; 
+}
+
+a {
+  color: #500000;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+  color: #500000;
+}
+
+.lineI { 
+  background: #BB8547;
+  width: 3px;
+}
+.lineU {
+  background: #E2A65D;
+  width: 10px;
+}
+.banner { 
+  background: #BEE894 url(../_images/banner.png) no-repeat;
+  height: 100px;
+}
+.marquee {
+  color: #6E7A52;
+  background: #DCE0D1;
+  border-bottom: solid 1px #6E7A52;
+  height: 30px;
+}
+.marquee a {
+  color: #6E7A52;
+  text-decoration: none;
+}
+.marquee a:hover {
+  text-decoration: none;
+  color: #6E7A52;
+}
+.lineS { 
+  background: #BB8547;
+  height: 3px;
+}
+.sponsor { 
+  background: #E2A65D;
+  height: 120px;
+}
+
+.images {
+  background: #FFFFFF;
+  border: solid 1px #474000;
+}
+.images_visible {
+  background: #FFCC67;
+  border: solid 1px #918c66;
+}
+
+.imagesSelect {
+  background: #FFCC67;
+  border: solid 3px #474000;
+}
+
+#navigation {
+  background: #dcf4c3 url(../_images/banner.png) 0 -100px repeat-x;
+  height: 33px;
+  font-family: Verdana; 
+}
+#navigation ul, #sub_navigation span {
+  margin-left: 0px;
+}
+#navigation li {
+  list-style: none;
+  display: inline;
+}
+#navigation a {
+  font-size: 11px;
+  float: left;
+  font-style: none;
+  text-decoration: none;
+  text-align: center;
+  width: 83px;
+  padding: 15px 0px 0px 0px;
+  color: #474000;
+}
+#navigation .selected a, #navigation a:hover {
+  font-size: 11px;
+  font-style: italic;
+  text-decoration: none;
+  color: #474;
+}
+#navigation span {
+  float: left;
+  width: 9px;
+  height: 33px;
+}
+#nav_admin a {
+  color: #DA283E;
+}
+
+#sub_navigation {
+  background: #CBEEA8 url(../_images/banner.png) 0 -133px repeat-x;
+  height: 30px;
+
+  border-bottom: 1px solid #525C3D;
+  overflow: auto;
+}
+#sub_navigation ul {
+  float: left;
+	list-style: none;
+}
+#sub_navigation li {
+  float: left;
+  list-style: none;
+}
+#sub_navigation a {
+  float: left;
+  font-size: 10px;
+  line-height: 10px;
+  text-decoration: none;
+  padding: 13px 25px 7px 24px;
+  color: #474000;
+}
+#sub_navigation a:hover, #sub_navigation .selected a {
+  color: #474000;
+}
+#sub_navigation span {
+  float: left;
+  width: 1px;
+  height: 30px;
+}
+#sub_navigation.flat {
+  height: 5px;
+  font-size: 1px;
+  line-height: 5px;
+  background: #B4DE8B;
+}
+
+.maintable { 
+  background: #F2F2F2;
+  padding: 15px 0px 5px 0px; 
+  vertical-align: top;
+  color: #474000;
+  width: 774px;
+}
+
+.title {
+  background: #fff;
+  color: #500000;
+  border-bottom: 1px solid #BB8547;
+  border-top: 2px solid #BB8547;
+  vertical-align: center;
+  font-style: italic;
+  font-size: 14px;
+  padding: 8px 10px 8px 5px;
+}
+
+.fieldset { 
+  padding: 0px 0px 0px 5px; 
+  vertical-align: top;
+}
+.legend {
+  color: #7A7A7A;
+}
+.ondertitle {
+  background: #E2A65D;
+  color: #FFFFFF;
+  border-bottom: 1px solid #BB8547;
+  border-top: 2px solid #BB8547;
+  font-weight: bold;
+}
+.ondertitle_inschrijven {
+  background: #E2A65D;
+  color: #FFFFFF;
+  border-bottom: 1px solid #BB8547;
+  border-top: 2px solid #BB8547;
+  font-weight: italic;
+}
+.ondertitle_inschrijven a{
+  color: #FFFFFF;
+  font-weight: italic;
+}
+
+.important {
+  color: #DA283E;
+}
+.important a {
+  color: #DA283E;
+}
+.error {
+  background: #E4E3D9;
+  border: 1px solid #474000;
+}
+.nok{
+  color: #CC0000;
+  background: #FFB3B3;
+  border: 1px solid #CC0000;
+}
+.ok {
+  color: #006600;
+  background: #B3FFB3;
+  border: 1px solid #006600;
+}
+
+
+
+/* INPUT FUIVEN + INLOGGEN */
+.input {
+  color: #474000;
+  border: 1px solid #474000;
+  background: #FAFEFF;
+}
+.input_disabled {
+  color: #AEAB91;
+  border: 1px solid #AEAB91;
+  background: #F2F2F2;
+}
+
+.verzenden { 
+  font-size: 8pt;
+  font-family: verdana; 
+  color: #474000; 
+  background: #FAFEFF; 
+  border: 1px solid #474000;
+}
+.verzenden_title { 
+  font-size: 8pt;
+  font-family: verdana; 
+  color: #BB8547; 
+  background: #ECBF83; 
+  border: 1px solid #BB8547;
+}
+
+.extra { 
+  height: 200px;
+  width: 420px;
+  border: 1px solid #474000;
+  color: #474000;
+  background: #FAFEFF;
+}
+
+.lineup { 
+  height: 500px;
+  width: 420px;
+  border: 1px solid #474000;
+  color: #474000;
+  background: #FAFEFF;
+}
+
+/* AFBEELDINGEN FOTO'S & COMMENTAAR */
+.visible {
+  background: #E8B36D;
+  border: 1px solid #BB8547;
+}
+#kljgistel, #gewest, #camera, #film, #bestanden, #inschrijven, #commentaar{
+  background: #FFCC67; 
+  border: 1px solid #BB8547;
+  height: 20px;
+  font-weight: normal;
+  font-size: 12px;
+}
+#kljgistel a {
+  background: #FFCC67 url(../_images/duim.jpg) center center no-repeat;
+  float: left;
+  
+  text-decoration: none;
+  padding: 3px 8px 3px 8px;
+}
+#gewest a {
+  background: #FFCC67 url(../_images/gewest.jpg) center center no-repeat;
+  float: left;
+  
+  text-decoration: none;
+  padding: 3px 8px 3px 8px;
+}
+#camera a {
+  background: #FFCC67 url(../_images/camera.jpg) center center no-repeat;
+  float: left;
+  
+  text-decoration: none;
+  padding: 3px 8px 3px 8px;
+}
+#film a {
+  background: #FFCC67 url(../_images/film.jpg) center center no-repeat;
+  float: left;
+  
+  text-decoration: none;
+  padding: 3px 8px 3px 8px;
+}
+#bestanden a {
+  background: #FFCC67 url(../_images/bestanden.jpg) center center no-repeat;
+  float: left;
+  
+  text-decoration: none;
+  padding: 3px 8px 3px 8px;
+}
+#inschrijven a {
+  background: #FFCC67 url(../_images/inschrijven.jpg) center center no-repeat;
+  float: left;
+  
+  text-decoration: none;
+  padding: 3px 8px 3px 8px;
+}
+#commentaar a:hover {
+  background: #FFCC67 url(../_images/commentaar.jpg) center center no-repeat;
+  color: #FFFFFF;
+}
+#commentaar a {
+  background: #FFCC67 url(../_images/commentaar_fade.jpg) center center no-repeat;
+  float: left;
+  
+  text-decoration: none;
+  padding: 3px 8px 3px 8px;
+}
+.edit {
+  background: #723232; 
+  border: 1px solid #500000;
+}
+.text_camera { 
+  height: 100px;
+  width: 350px;
+  border: 1px solid #474000;
+  color: #474000;
+  background: #FAFEFF;
+}

@@ -1,0 +1,43 @@
+@charset "utf-8";
+#top, #bottom, #left, #right {
+	background: #500000;
+	position: fixed;
+	}
+	#left, #right {
+		top: 0; bottom: 0;
+		width: 20px;
+		}
+		#left { left: 0; }
+		#right { right: 0; }
+		
+	#top, #bottom {
+		left: 0; right: 0;
+		height: 20px;
+		}
+		#top { top: 0; }
+		#bottom { bottom: 0; }/* CSS Document */
+		
+		
+		
+		
+
+
+                               
+/* CSS Document */
+
+.naam {
+	color: #FFF;
+}
+#bottom tr center td center {
+	color: #fff;
+}
+.footer {
+position: fixed; // Positie van de footer niet 'buggt'.
+width: 100%; // De lengte van de footer over heel je scherm is. (niet de hoogte)
+background: #500000; // Achtergrondskleur kan je aanpassen
+bottom: 0px; // Hiermee zorgen we dat hij aan de 'bodem' van de pagina plakt
+padding: 20px; // Hiermee zorgen we dat de vergroot, en er ruimte gecreeërd wordt voor de tekst
+left: 0px; //  Dat hij netjes aan de linkerkant is, en niet een beetje verschuifd
+font-family: 'Open Sans', sans-serif; // Een mooie font, die hebben we geimport in de begin van de CSS
+color: #fff; // Tekst kleur (wit)
+}
