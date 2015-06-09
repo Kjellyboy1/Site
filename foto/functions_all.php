@@ -6,6 +6,14 @@
 	$id = $_GET['id'];
 	$sort = $_GET['sort'];
 	$rights = $_SESSION['rights'];
+	$db_instellingen = mysql_connect($dbhost,$dbuname,$dbpass); 
+	mysql_select_db($dbname) or die($dberror);
+	$query_instellingen = "SELECT * FROM Instellingen";
+	$result_instellingen = mysql_query($query_instellingen);
+	$instellingen = mysql_fetch_array($result_instellingen);
+	$werkjaar = $instellingen[werkjaar]; 
+	
+		
 	}
 	 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -22,7 +30,8 @@
 <script>
 	$(document).ready(function(e) {
 		
-        $("#newdir").append("<option>dfghjklm</option>")
+        $("#newdir").append("<option></option>")
+		
 		
     });
 	
@@ -36,12 +45,22 @@
 
 <body>
 
-	<head>
+
 	
 	</head>
 
 	<body>
 			 <?php
+			 include "config.php";
+$db_instellingen = mysql_connect($dbhost,$dbuname,$dbpass); 
+	mysql_select_db($dbname) or die($dberror);
+	$query_instellingen = "SELECT * FROM Instellingen";
+	$result_instellingen = mysql_query($query_instellingen);
+	$instellingen = mysql_fetch_array($result_instellingen);
+	$werkjaar = $instellingen[werkjaar]; 
+	$map = '../media/werkjaar/'.$werkjaar. '/'  ;
+
+echo  $map;
 // Controleren of het formulier verzonden is
 if($_SERVER['REQUEST_METHOD'] == "POST")
 {
@@ -58,14 +77,15 @@ if($_SERVER['REQUEST_METHOD'] == "POST")
     {
         if(!file_exists($_POST['eigen_map']))
         {
-
-            mkdir ('../media/werkjaar/2014-2015/'.$_POST['eigen_map']  , 0777, true ); // Map aanmaken, met rechten 0777 (Let op: Aanpassen indien anders gewenst)
+	
+			global $map;
+            mkdir  (''. $map . '/' .$_POST['eigen_map']  , 0777, true ); // Map aanmaken, met rechten 0777 (Let op: Aanpassen indien anders gewenst)
 			echo "<div class='alert alert-succses' role='alert'>Map aangemaakt! </div>";
 
 			
 		
         }
-     $target_dir = '../media/werkjaar/2014-2015/'. $_POST['eigen_map']; 
+     $target_dir = ''. $map . '/'. $_POST['eigen_map']; 
 
     }    elseif(!empty($_POST['map']) && empty($_POST['eigen_map']))
     {
@@ -106,7 +126,9 @@ if($_SERVER['REQUEST_METHOD'] == "POST")
         }
     }
 }
-?> <table align="center" width="100%">
+
+	
+	?> 
 <form action="functions_all.php" method="post" enctype="multipart/form-data">
   <p>Selecteer een map:
     <select name="map" id="newdir">
@@ -117,10 +139,10 @@ if($_SERVER['REQUEST_METHOD'] == "POST")
 Of vul een nieuwe map in: 
 <form class="form-horizontal">
   <div class="form-group">
-    <input type="text"  class="form-control"name="eigen_map" placeholder="20.05.2015.Lokaalavond" maxlength="20" />
+    <input type="text"  class="form-control"name="eigen_map" placeholder="20.05.2015.Lokaalavond " maxlength="20" />
     </div>
   </div>
-  <p>Datum Activiteit + Titiel.</p>
+  <p>Datum Activiteit + Titel.</p>
   <p>Bv. Jaar.Maand.Dag.Titel  </p>
   <p>Gebruik A.U.B. jullie verstand! Deze foto's komen openbaar!<br />
     <br />
@@ -129,7 +151,8 @@ Of vul een nieuwe map in:
   </p>
   <p> </p>
 </form>
-</table> 
+
+
   </body>
 
 </html> 
