@@ -1,6 +1,11 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+<meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+		<link href = "../bootstrap/css/bootstrap.min.css" rel = "stylesheet">
+    	<link href = "../bootstrap/css/bootstrap.css" rel = "stylesheet">
+   		<script	src="http://code.jquery.com/jquery-2.1.4.min.js"> </script>
+  	    <script	src="../bootstrap/js/bootstrap.js"> </script>
 
 
 
@@ -21,36 +26,41 @@
 
 <body>
 
-	<head>
-	
-	</head>
+<?php
+			 include "config.php";
+$db_instellingen = mysql_connect($dbhost,$dbuname,$dbpass); 
+	mysql_select_db($dbname) or die($dberror);
+	$query_instellingen = "SELECT * FROM Instellingen";
+	$result_instellingen = mysql_query($query_instellingen);
+	$instellingen = mysql_fetch_array($result_instellingen);
+	$werkjaar = $instellingen[werkjaar]; 
+	$map = '../media/werkjaar/'.$werkjaar. '/'  ;
 
-	<body>
-			 <?php
 // Controleren of het formulier verzonden is
 if($_SERVER['REQUEST_METHOD'] == "POST")
 {
     $target_dir = '';
     if(!empty($_POST['map']) && !empty($_POST['eigen_map']))
     {
-        echo "Er mag slechts 1 optie gekozen zijn (map of eigen map)"; // Beide ingevuld
+        echo "<div class='alert alert-danger' role='alert'>Er mag slechts 1 optie gekozen zijn (map of eigen map)</div>"; // Beide ingevuld
     }
     elseif(empty($_POST['map']) && empty($_POST['eigen_map']))
     {
-        echo "Er moet minimaal 1 optie gekozen zijn (map of eigen map)"; // Niks ingevuld
+        echo "<div class='alert alert-danger' role='alert'>Er moet minimaal 1 optie gekozen zijn (map of eigen map)</div>"; // Niks ingevuld
     }
     elseif(empty($_POST['map']) && !empty($_POST['eigen_map']))
     {
         if(!file_exists($_POST['eigen_map']))
         {
-
-            mkdir ('../media/werkjaar/2014-2015/'.$_POST['eigen_map']  , 0777, true ); // Map aanmaken, met rechten 0777 (Let op: Aanpassen indien anders gewenst)
-			echo "Map aangemaakt! + ";
+	
+			global $map;
+            mkdir  (''. $map . '/' .$_POST['eigen_map']  , 0777, true ); // Map aanmaken, met rechten 0777 (Let op: Aanpassen indien anders gewenst)
+			echo "<div class='alert alert-succses' role='alert'>Map aangemaakt! </div>";
 
 			
 		
         }
-     $target_dir = '../media/werkjaar/2014-2015/'. $_POST['eigen_map']; 
+     $target_dir = ''. $map . '/'. $_POST['eigen_map']; 
 
     }    elseif(!empty($_POST['map']) && empty($_POST['eigen_map']))
     {
@@ -68,14 +78,14 @@ if($_SERVER['REQUEST_METHOD'] == "POST")
             // Check if file already exists
             if(file_exists($target_file))
             {
-                echo "Sorry, file already exists.";
+                echo "<div class='alert alert-danger' role='alert'>Sorry, file already exists.</div>";
                 $uploadOk = 0;
             }
             // Check if $uploadOk is set to 0 by an error
             if($uploadOk == 0)
             {
-                echo "Sorry, your file was not uploaded.";
-            }
+                echo "<div class='alert alert-danger' role='alert'><strong>sorry,</strong> maar de foto/'s zijn niet upgeload.</div> "; }
+            
             else
             {
                 // if everything is ok, try to upload file
@@ -85,31 +95,38 @@ if($_SERVER['REQUEST_METHOD'] == "POST")
                 }
                 else
                 {
-                    echo "Sorry, there was an error uploading your file.";
+                    echo "<div class='alert alert-danger' role='alert'>Sorry, there was an error uploading your file.</div>";
                 }
             }
         }
     }
 }
-?> 
-<form action="upload.php" method="post" enctype="multipart/form-data">
+
+	
+	?> 
+<form action="functions_all.php" method="post" enctype="multipart/form-data">
   <p>Selecteer een map:
     <select name="map" id="newdir">
 
     </select>
 <br />
 <br />
-Of vul een nieuwe map in: <input type="text" name="eigen_map">
- </p>
-  <p>Datum Activiteit + Titiel.</p>
+Of vul een nieuwe map in: 
+<form class="form-horizontal">
+  <div class="form-group"></div>
+  </div>
+  <p>Datum Activiteit + Titel.</p>
   <p>Bv. Jaar.Maand.Dag.Titel  </p>
   <p>Gebruik A.U.B. jullie verstand! Deze foto's komen openbaar!<br />
-    <br />
-    <input type="file" name="fileToUpload" id="fileToUpload" >
-    <input type="submit" name="versturen" value="Versturen">
+  
+    <span class="form-group">
+    <input type="text"  class="form-control"name="eigen_map" placeholder="20.05.2015.Lokaalavond " maxlength="20" />
+    </span><br />
+    <input type="file"  name="fileToUpload" id="fileToUpload" >
+  <p> <button type="submit"  class="btn btn-success"name="versturen" value="Versturen">Versturen</button></p>
   </p>
+  <p> </p>
 </form>
 
-  </body>
 
 </html> 
