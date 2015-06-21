@@ -30,7 +30,9 @@
 <script>
 	$(document).ready(function(e) {
 		
+		
         $("#newdir").append("<option></option>")
+	    $("#newdir").append("<option>test </option>")
 		
 		
     });
@@ -60,7 +62,6 @@ $db_instellingen = mysql_connect($dbhost,$dbuname,$dbpass);
 	$werkjaar = $instellingen[werkjaar]; 
 	$map = '../media/werkjaar/'.$werkjaar. '/'  ;
 
-echo  $map;
 // Controleren of het formulier verzonden is
 if($_SERVER['REQUEST_METHOD'] == "POST")
 {
@@ -129,7 +130,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST")
 
 	
 	?> 
-<form action="functions_all.php" method="post" enctype="multipart/form-data">
+<form action="upload.php" method="post" enctype="multipart/form-data">
   <p>Selecteer een map:
     <select name="map" id="newdir">
 
@@ -145,6 +146,7 @@ Of vul een nieuwe map in:
   <p>Datum Activiteit + Titel.</p>
   <p>Bv. Jaar.Maand.Dag.Titel  </p>
   <p>Gebruik A.U.B. jullie verstand! Deze foto's komen openbaar!<br />
+  
     <br />
     <input type="file"  name="fileToUpload" id="fileToUpload" >
    <p> <button type="submit"  class="btn btn-success"name="versturen" value="Versturen">Versturen</button></p>
